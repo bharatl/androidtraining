@@ -72,9 +72,10 @@ public class TodoActivity extends Activity {
 		EditText eText = (EditText) findViewById(R.id.NewItemText);
 		if (eText.getText().length() != 0){
 		itemsAdapter.add(eText.getText().toString());
-		}
 		eText.setText("");	
 		saveItems();
+		}
+		
 	}
 	private void saveItems() {
 		File filesDir = getFilesDir();
